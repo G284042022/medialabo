@@ -10,14 +10,15 @@ h1 {
 }
  
 h2 {
-	margin: 10px;
-	font-family: normal;
+	margin: 15px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	color: #9966CC;
 	
 }
 h22 {
 	font-size: 18pt;
 	font-family:initial;
+	font-weight: bold;
 	border-bottom: 5px dotted #5F9EA0;
 
 }
@@ -28,11 +29,11 @@ h3 {
 
 div#zentai {
 	display: grid;
-	grid-template-columns: 5fr 5fr 5fr ;
-	grid-auto-rows: 200px ; 
-	grid-gap:15px;
+	grid-template-columns: 6fr 7fr 8fr ;
+	grid-auto-rows: 300px ; 
+	grid-gap:8px;
 	padding: 5px 5px 5px 5px;
-	width: 1024px;
+	width: 1050px;
 }
 div#zentai > div {
 	margin-left: 8px;
