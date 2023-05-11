@@ -12,7 +12,16 @@ let gakka = [
 	{name: "電子システム工学科", ename: "Department of Electronics and Computer Systems"},
 	{name: "情報工学科", ename: "Department of Computer Science"},
 	{name: "デザイン学科", ename: "Department of Design"}
+	
 ];
+console.log(campus.address);
+for(let x of campus.buildingD){
+	console.log(x);
+}
+for(let i of gakka){
+	console.log(i.name);
+}
+
 
 //////////////// ここから下にプログラムを書きたそう!
 
