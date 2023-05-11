@@ -1,25 +1,29 @@
+</body>
+</html>
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Weather</title>
+    <meta charset="UTF-8">
+    <title>東京の天気</title>
+    <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-    
-    </ul>
-    <h2>Tokyo 東京 （日本）</h2>
-    <ul>
-        <li>緯度:35.6894</li>
-        <li>経度:139.6917</li>
-        <li>天気:Feels like 23°C. Few clouds. Fresh Breeze </li>
-        <li>最低気温:17℃</li>
-        <li>最高気温:25℃</li>
-        <li>湿度:69%</li>
-        <li>風速:4.3m/s</li>
-        <li>風向:North</li>
-        <li>都市名</li>
-
-    </ul>
-    
-</body>
+    <div class="weather-info">
+      <h1>東京の天気</h1>
+      <div class="location-info">
+        <p>緯度: <span id="lat"></span></p>
+        <p>経度: <span id="lon"></span></p>
+        <p>都市名: <span id="city"></span></p>
+      </div>
+      <div class="current-weather">
+        <p>天気: <span id="weather"></span></p>
+        <p>最低気温: <span id="min-temp"></span>℃</p>
+        <p>最高気温: <span id="max-temp"></span>℃</p>
+        <p>湿度: <span id="humidity"></span>%</p>
+        <p>風速: <span id="wind-speed"></span>m/s</p>
+        <p>風向: <span id="wind-direction"></span></p>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
 </html>
