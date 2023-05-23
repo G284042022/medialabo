@@ -10,9 +10,10 @@ h1 {
 }
  
 h2 {
-	margin: 15px;
+	margin: 8px;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	color: #9966CC;
+
 	
 }
 h22 {
@@ -31,12 +32,12 @@ div#zentai {
 	display: grid;
 	grid-template-columns: 6fr 7fr 8fr ;
 	grid-auto-rows: 300px ; 
-	grid-gap:8px;
+	grid-gap:5px;
 	padding: 5px 5px 5px 5px;
-	width: 1050px;
+	width: 1200px;
 }
 div#zentai > div {
-	margin-left: 8px;
+	margin-left: 5px;
 	background-color: #FFC0CB;
 }
 div#kaisu {
