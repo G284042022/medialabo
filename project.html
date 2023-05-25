@@ -1,27 +1,31 @@
-    </body>
+</body>
 </html>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>東京の天気</title>
+    <title>北京の天気</title>
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
+    <label for="chiku">地区: </label>
+	  <input type="text" name="chiku" size="10">
+	  <button id="print">表示</button>
+
     <div class="weather-info">
-      <h1>東京の天気</h1>
+      <h1>北京の天気</h1>
       <div class="location-info">
-        <p>緯度: <span id="data.coorlat"></span></p>
-        <p>経度: <span id="lon"></span></p>
-        <p>都市名: <span id="city"></span></p>
+        <p>緯度: 39.9075<span id="data.coorlat"></span></p>
+        <p>経度: 116.3972<span id="lon"></span></p>
+        <p>都市名:北京 <span id="city"></span></p>
       </div>
       <div class="current-weather">
-        <p>天気: <span id="weather"></span></p>
-        <p>最低気温: <span id="min-temp"></span>℃</p>
-        <p>最高気温: <span id="max-temp"></span>℃</p>
-        <p>湿度: <span id="humidity"></span>%</p>
-        <p>風速: <span id="wind-speed"></span>m/s</p>
-        <p>風向: <span id="wind-direction"></span></p>
+        <p>天気:曇りがち <span id="weather"></span></p>
+        <p>最低気温: 9.94<span id="min-temp"></span>℃</p>
+        <p>最高気温: 9.94<span id="max-temp"></span>℃</p>
+        <p>湿度:14 <span id="humidity"></span>%</p>
+        <p>風速: 2.65 <span id="wind-speed"></span>m/s</p>
+       
       </div>
     </div>
     <script src="weather.js" defer></script>

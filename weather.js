@@ -45,5 +45,13 @@ let data = {
   "cod": 200
 };
 
-////////// 課題3-2 ここからプログラムを書こう
+
+let b = document.querySelector('#print');
+b.addEventListener('click', greeting);
+function greeting() {
+	let i = document.querySelector('input[name="chiku"]');
+	let chiku = i.value;
+	
+}
+
 
