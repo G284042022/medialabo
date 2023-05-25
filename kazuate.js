@@ -15,29 +15,31 @@ let kaisu = 0;
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let yoso = 4;
-  let result = document.querySelector('p#result');
-  let answer = document.querySelector('span#answer');
-  let kaisu1 =document.querySelector('span#kaisu');
+  let x = document.querySelector('p#result');
+  let y = document.querySelector('span#answer');
+  y.textContent=yoso;
+  let z=document.querySelector('span#kaisu');
+  z.textContent=kaisu;
+
 
   // 課題3-1: 正解判定する
-  kaisu = kaisu + 1;
+ console.log(kaisu+'回目の予想'+yoso);
   
     if(kaisu > 3) {
-    result.textContent = '答えは ' + kotae + ' でした．すでにゲームは終わっています';
+    x.textContent = '答えは ' + kotae + ' でした．すでにゲームは終わっています';
     } else if(kotae === yoso) {
-      result.textContent = '正解です．おめでとう!';
+      x.textContent = '正解です．おめでとう!';
     kaisu = 4;
     } else {
       if(kaisu === 3) {
-          result.textContent = 'まちがい．残念でした答えは ' + kotae + ' です．';
+          x.textContent = 'まちがい．残念でした答えは ' + kotae + ' です．';
       } else if(kotae > yoso) {
-          result.textContent = 'まちがい．答えはもっと大きいですよ';
+          x.textContent = 'まちがい．答えはもっと大きいですよ';
       } else {
-          result.textContent = 'まちがい．答えはもっと小さいですよ';
+          x.textContent = 'まちがい．答えはもっと小さいですよ';
       }
   }  
-  kaisu1.textContent=kaisu;
-  p.insertAdjacentElement('beforeend',kaisu1);
+  kaisu = kaisu + 1;
 }
     
 
