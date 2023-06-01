@@ -11,12 +11,14 @@ body {
    
   }
   h2 {
+   
     color: black;
     border-bottom: 2px dashed white;
   
   
   }
   h3 {
+ 
     position: relative;
     padding: 1em 1em;
     background-color: #7e5bca;
@@ -26,12 +28,14 @@ body {
   }
   
   h4 {
+    text-align: center;
     color: black;
     border-bottom: 2px dashed white;
   
   
   }
   h5 {
+    text-align: center;
     margin: 8px;
     font-size: 15pt;
     color: #0095ff;
