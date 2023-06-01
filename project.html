@@ -1,33 +1,52 @@
-</body>
-</html>
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>北京の天気</title>
-    <link rel="stylesheet" href="style1.css">
-  </head>
-  <body>
-    <label for="chiku">地区: </label>
-	  <input type="text" name="chiku" size="10">
-	  <button id="print">表示</button>
-
-    <div class="weather-info">
-      <h1>北京の天気</h1>
-      <div class="location-info">
-        <p>緯度: 39.9075<span id="data.coorlat"></span></p>
-        <p>経度: 116.3972<span id="lon"></span></p>
-        <p>都市名:北京 <span id="city"></span></p>
-      </div>
-      <div class="current-weather">
-        <p>天気:曇りがち <span id="weather"></span></p>
-        <p>最低気温: 9.94<span id="min-temp"></span>℃</p>
-        <p>最高気温: 9.94<span id="max-temp"></span>℃</p>
-        <p>湿度:14 <span id="humidity"></span>%</p>
-        <p>風速: 2.65 <span id="wind-speed"></span>m/s</p>
-       
-      </div>
-    </div>
+    <meta charset="utf-8">
+    <title>世界の天気</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="weather.js" defer></script>
+    
+  </head>
+
+  <body>
+        <h1>世界の天気</h1>
+        <h2>都市コードを入力してください</h2>
+        <label for="basyo">都市コード</label>
+     <input type="text" name="basyo" size="15">
+     <button id="print"> 表示</button>
+     <h3>
+      <dl>
+        <dt>場所</dt>
+        <dd id ="names"></dd>
+        <dt>天気</dt>
+        <dd id="weather"></dd>
+        <dt>最高気温</dt>
+        <dd id="temp_max"></dd>
+        <dt>最低気温</dt>
+        <dd id="temp_min"></dd>
+      </dl>
+       </h3>
+
+       <h4> 都市コード一覧</h4>
+      <h5>
+      <dl>
+        <dd>
+          360630 ... Cairo カイロ （エジプト）</dd>
+        <dd>524901 ... Moscow モスクワ （ロシア）</dd>
+        <dd>993800 ... Johannesburg ヨハネスブルク （南アフリカ）</dd>
+        <dd>1816670 ... Beijing 北京 （中華人民共和国）</dd>
+        <dd>1850147 ... Tokyo 東京 （日本）</dd>
+        <dd>1880252 ... Singapore シンガポール</dd>
+        <dd>2147714 ... Sydney シドニー （オーストラリア）</dd>
+        <dd>2643743 ... London ロンドン （イギリス）</dd>
+        <dd>2968815 ... Paris パリ （フランス）</dd>
+        <dd>3451189 ... Rio de Janeiro リオデジャネイロ （ブラジル）</dd>
+        <dd>5128581 ... New York ニューヨーク （アメリカ合衆国）</dd>
+        <dd>5368361 ... Los Angeles ロサンゼルス （アメリカ合衆国）</dd>
+      </dl>
+    </h5>
+          
+   
+       
   </body>
 </html>

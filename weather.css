@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbbea3;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    font-family:initial;
+	font-weight: bold;
+   
+  }
+  h2 {
+    color: black;
+    border-bottom: 2px dashed white;
+  
+  
+  }
+  h3 {
+    position: relative;
+    padding: 1em 1em;
+    background-color: #7e5bca;
+    color: white;
+
+
+  }
+  
+  h4 {
+    color: black;
+    border-bottom: 2px dashed white;
+  
+  
+  }
+  h5 {
+    margin: 8px;
+    font-size: 15pt;
+    color: #0095ff;
+    text-shadow: 1 1 1px white;
+    
+  }
