@@ -3,8 +3,8 @@ b.addEventListener('click',sendRequest);
 
 function sendRequest(){
     let i = document.querySelector('input[name="basyo"]');
-    let key = i.value;
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+key+'.json';
+    let id = i.value;
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+id+'.json';
     
     // 通信開始
     axios.get(url)
@@ -37,6 +37,8 @@ function showResult(resp) {
     let a = document.querySelector('dd#names');
     a.textContent = names;
 
+    
+    
     for (let n of data.weather){
         let weather = (n.description);
     let b = document.querySelector('dd#weather');
@@ -49,6 +51,22 @@ function showResult(resp) {
     let temp_min = data.main.temp_min;
     let d = document.querySelector('dd#temp_min');
     d.textContent =  temp_min + '℃';
+
+    let humidity = data.main.humidity
+    let e = document.querySelector('dd#humidity');
+    e.textContent =  humidity ;
+
+    let windspeed = data.wind.speed;
+    let f = document.querySelector('dd#windspeed');
+    f.textContent =  windspeed ;
+    
+    let lon = data.coord.lon;
+    let o = document.querySelector('dd#lon');
+    o.textContent =  lon ;
+
+    let lat= data.coord.lat;
+    let t = document.querySelector('dd#lat');
+    t.textContent =  lat;
     
 
 
