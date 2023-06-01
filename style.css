@@ -16,7 +16,7 @@ h2 {
 
 	
 }
-h22 {
+h4 {
 	font-size: 18pt;
 	font-family:initial;
 	font-weight: bold;
@@ -43,11 +43,11 @@ div#zentai > div {
 div#kaisu {
 	display: grid;
 	grid-template-columns: 3fr 3fr ;
-	grid-auto-rows: 150px ; 
-	grid-gap:200px;
+	grid-gap:100px;
 	padding: 10px;
 	width: 1200px;
 }
+
 div#kazuate > div{
 	margin-left: 10px;
 	background-color: #93d2f7;
